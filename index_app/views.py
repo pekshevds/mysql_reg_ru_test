@@ -1,5 +1,7 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpRequest
+from django.views import View
 
 
-def index(request):
-    return HttpResponse("<h1>hell world</h1>")
+class Index(View):
+    def get(self, request:HttpRequest) -> HttpResponse:
+        return HttpResponse("<h1>hell world</h1>")
