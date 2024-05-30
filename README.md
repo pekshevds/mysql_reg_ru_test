@@ -1,0 +1,1 @@
+# mysql_reg_ru_test
